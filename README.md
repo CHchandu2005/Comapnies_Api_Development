@@ -1,12 +1,14 @@
 ## Company Management System
 
+GitHub Repository: https://github.com/CHchandu2005/Comapnies_Api_Development
+
 A full-stack MERN app to manage companies with filtering, search, pagination, image uploads, and robust validation.
 
 ### Features
 - Company CRUD
 - Filter by industry, location, size, founded year, status
 - Checkbox filters (industry, location)
-- Search by name and description (single search bar)
+- Search by name and description (single search bar) (debouncing)
 - Pagination with page and limit
 - Image upload via Multer to Cloudinary
 - Validation with Joi middleware
@@ -64,8 +66,6 @@ npm install
 npm run dev
 ```
 
-### Notes
-- 304 responses indicate browser/HTTP caching (automatic); no server-side data caching implemented.
-- Update images by re-uploading on PUT; Cloudinary stores files.
+
 
 

@@ -7,8 +7,8 @@ const companyBodySchema = Joi.object({
   location: Joi.string().trim().min(2).max(120).required(),
   size: Joi.alternatives().try(Joi.number().integer().min(0), Joi.string().allow('')).default(''),
   foundedYear: Joi.alternatives().try(
-    Joi.number().integer().min(1800).max(new Date().getFullYear()),
-    // Joi.string().allow('')
+    Joi.number().integer().min(0).max(new Date().getFullYear()),
+    Joi.string().allow('')
   ).default(''),
   isActive: Joi.alternatives().try(Joi.boolean(), Joi.string().valid('true', 'false', '')).default(''),
 });

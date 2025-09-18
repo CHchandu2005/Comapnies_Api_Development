@@ -77,7 +77,7 @@ const CompanyListPage = () => {
         }
       } catch (error) {
         console.error('Error loading companies:', error);
-        toast.error('Failed to load companies');
+        // toast.error('Failed to load companies');
       } finally {
         setIsLoading(false);
       }
